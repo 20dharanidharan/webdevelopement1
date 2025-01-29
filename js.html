@@ -8,5 +8,11 @@
 <body>
     <p id="demo">hi</p>
     <button type="button" onclick='document.getElementById("demo").innerHTML="bye"'>click me</button>
+    <hr>
+    <script>
+        function myFunction(){document.getElementById("change").innerHTML = "bye";}
+    </script>
+    <button type="button" onclick="myFunction()">click</button>
+    <p id="change">hi</p>
 </body>
 </html>
