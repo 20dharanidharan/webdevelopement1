@@ -56,5 +56,22 @@ const person = {
 };
 document.getElementById("demo5").innerHTML = person.fullName();
 </script>
+<hr>
+<p id="demo6"></p>
+<script>
+const myObj = {
+  name: "John",
+  age: 30,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Fiat"
+  }
+}
+myObj.number = "7";
+delete myObj["myCars"]["car2"]
+document.getElementById("demo6").innerHTML = myObj["myCars"]["car2"] + myObj.number ;
+</script>
+<hr>
 </body>
 </html>
