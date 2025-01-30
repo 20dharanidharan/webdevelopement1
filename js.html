@@ -81,9 +81,24 @@ document.getElementById("demo6").innerHTML = myObj["myCars"]["car2"] + myObj.num
         age:23,
     };
     person1.fullName = function(){
-          return (this.firstName + this.lastName).toLowerCase();
+          return (this.firstName + this.lastName).toUpperCase();
     };
     document.getElementById("demo7").innerHTML=person1.fullName();
 </script>
+<hr>
+<p id="demo8"></p>
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+document.getElementById("demo8").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+</script>
+<hr>
 </body>
 </html>
