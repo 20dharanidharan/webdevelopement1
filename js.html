@@ -73,5 +73,17 @@ delete myObj["myCars"]["car2"]
 document.getElementById("demo6").innerHTML = myObj["myCars"]["car2"] + myObj.number ;
 </script>
 <hr>
+<p id="demo7"></p>
+<script>
+    const person1={
+        firstName:"john",
+        lastName:"min",
+        age:23,
+    };
+    person1.fullName = function(){
+          return (this.firstName + this.lastName).toLowerCase();
+    };
+    document.getElementById("demo7").innerHTML=person1.fullName();
+</script>
 </body>
 </html>
