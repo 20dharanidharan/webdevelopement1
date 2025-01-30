@@ -43,5 +43,18 @@ function myFunction(a, b) {
   return a * b;
 }
 </script>
+<hr>
+<p id="demo5"></p>
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("demo5").innerHTML = person.fullName();
+</script>
 </body>
 </html>
