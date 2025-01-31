@@ -108,5 +108,15 @@ document.getElementById("demo8").innerHTML =
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 document.getElementById("demo10").innerHTML = text.length;
 </script>
+<hr>
+<p id="demo11"></p>
+<script>
+let text1 = "Please locate where 'locate' occurs!";
+let index = text1.indexOf("John");
+document.getElementById("demo11").innerHTML = index;
+let text2 = "Hello world, welcome to the universe.";
+document.getElementById("demo11").innerHTML = text2.includes("world", 12);
+</script>
+<hr>
 </body>
 </html>
