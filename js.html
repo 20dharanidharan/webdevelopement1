@@ -133,6 +133,16 @@ let y2 = 9007199254740995n;
 let z2 = x2 * y2;
 document.getElementById("demo13").innerHTML = z2; 
 </script>
-
+<hr>
+<p id="demo14"></p>
+<script>
+let x3 = 9.656;
+document.getElementById("demo14").innerHTML =
+  x3.toExponential() + "<br>" + 
+  x3.toprecision(2) + "<br>" + 
+  x3.toFixed(4) + "<br>" + 
+  x3.toExponential(6);
+</script>
+<hr>
 </body>
 </html>
