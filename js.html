@@ -149,5 +149,13 @@ document.getElementById("demo14").innerHTML =
 const cars = new Array("Saab", "Volvo", "BMW");
 document.getElementById("demo15").innerHTML = cars;
 </script>
+<hr>
+<p id="demo16"></p>
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+document.getElementById("demo16").innerHTML = newArr;
+</script>
+<hr>
 </body>
 </html>
