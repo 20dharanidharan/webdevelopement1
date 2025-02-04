@@ -275,5 +275,16 @@ letters.add("e");
 document.getElementById("demo27").innerHTML = "The set has " + letters.size + " values.";
 </script>
 <hr>
+<p id="demo28"></p>
+<script>
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+let numb = fruits.get("apples");
+document.getElementById("demo28").innerHTML = "There are " + numb + " apples.";
+</script>
+<hr>
 </body>
 </html>
