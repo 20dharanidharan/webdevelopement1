@@ -211,5 +211,33 @@ if (time < 10) {
 document.getElementById("demo22").innerHTML = greeting;
 </script>
 <hr>
+<p id="demo23"></p>
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo23").innerHTML = "Today is " + day;
+</script>
+<hr>
 </body>
 </html>
