@@ -197,5 +197,19 @@ let b = 0;
 document.getElementById("demo21").innerHTML = Boolean(b);
 </script>
 <hr>
+<p id="demo22"></p>
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo22").innerHTML = greeting;
+</script>
+<hr>
 </body>
 </html>
