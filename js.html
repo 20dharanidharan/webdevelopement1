@@ -352,5 +352,16 @@ Object.assign(person1, person2);
 let texts = Object.entries(person1);
 document.getElementById("demo33").innerHTML = texts;
 </script>
+<p id="demo34"></p>
+<script>
+const persons = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "EN" 
+};
+Object.defineProperty(persons, "language", {value:"NO"})
+document.getElementById("demo34").innerHTML = persons.language;
+</script>
+<hr>
 </body>
 </html>
