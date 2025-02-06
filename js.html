@@ -338,6 +338,19 @@ const myCar2 = new Car("Audi", 2019);
 document.getElementById("demo32").innerHTML =
 myCar1.name + " " + myCar2.name;
 </script>
-hr
+<hr>
+<p id="demo33"></p>
+<script>
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+const person2 = {firstName: "Anne",lastName: "Smith"};
+Object.assign(person1, person2);
+let texts = Object.entries(person1);
+document.getElementById("demo33").innerHTML = texts;
+</script>
 </body>
 </html>
